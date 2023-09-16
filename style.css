@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(204, 43%, 93%);
+}
+
+.card{
+    
+    display: grid; 
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 150px 1fr ;
+    font-family: 'Karla', sans-serif;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 3px hsl(218, 22%, 67%);
+}
+
+.main-text{
+    background-color: white;
+  grid-column: span 2;
+  padding: 20px 30px;
+  border-radius: 10px 10px 0px 0px;
+  
+}
+
+.main-text h1{
+    color: hsl(179, 62%, 43%);
+}
+
+.main-text h3{
+    color: hsl(71, 73%, 54%);
+}
+
+.main-text p {
+    color: hsl(218, 22%, 67%);
+
+}
+
+.sub{
+    background-color: hsl(179, 62%, 43%);
+    
+    padding: 30px;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0px 0px 0px 10px ;
+
+}
+
+.sub h4{
+    margin-bottom: 25px;
+}
+
+.sub span{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.button{
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 3px;
+    font-weight: 700;
+    margin-top: 25px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs{
+    background-color: hsl(179, 62%, 50%);
+    padding: 30px;
+    color: hsl(204, 43%, 93%);
+    border-radius: 0px 0px 10px 0px ;
+}
+
+.faqs h4{
+    margin-bottom: 15px;
+}
+
+@media (max-width: 375px) {
+
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+        width: 280px;
+        
+    }
+
+    .main-text{
+        grid-column: span none;
+        
+    }
+
+    .sub{
+        border-radius: 0px;
+    }
+
+    .faqs{
+        border-radius: 0px 0px 15px 15px ;
+        
+    }
+
+}
